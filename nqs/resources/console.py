@@ -14,3 +14,7 @@ def display(T,delta: int =400,condition: bool = True):
     print(T)
     sleep(delta)
     clearConsole()
+
+def get(tag: str):
+  i=input("$"+tag+"> ")
+  return i
