@@ -1,3 +1,7 @@
+<h1 align="center">
+  <a title="Python For Change" href="http://pythonforchange.github.io"><img src="https://github.com/PythonForChange/NQS/blob/main/pixlr-bg-result.png?raw=true" width="220.5px" height="270px" alt="Python For Change Project"></a>
+</h1>
+
 # NQS
 ## News
 ### PythonForChange Announce New SDL: Natural Quantum Script 
