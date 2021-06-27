@@ -8,3 +8,9 @@ NQS (Natural Quantum Script) is a speciall domain programming language. It is fo
 The launching date will be announced soon.
 
 File extension: .nqa (Natural Quantum Application)
+
+### First Natural Quantum Script pre-releases 
+#### 06/27/2021 Santiago, Chile
+##### Tags: [quantum-programming-language](https://github.com/topics/quantum-programming-language)
+
+More information about pre-releases [here](https://github.com/eanorambuena/NQS)
