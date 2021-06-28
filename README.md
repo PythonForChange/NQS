@@ -3,6 +3,11 @@
 </h1>
 
 # NQS
+
+<a href='https://nqs.readthedocs.io/en/latest/?badge=latest'>
+    <img src='https://readthedocs.org/projects/nqs/badge/?version=latest' alt='Documentation Status' />
+</a>
+
 ## News
 ### PythonForChange Announce New SDL: Natural Quantum Script 
 #### 06/23/2021 Santiago, Chile
