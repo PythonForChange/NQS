@@ -1,11 +1,11 @@
-import nqs.codel.qiskit as q
+from nqs.core.reader import settings
+from nqs.core.quantum import quantum
 from nqs.resources.extensions import nqa
 from nqs.resources.parser import Parser
 
 def compile(name: str):
   lines=nqa.getLines(name)
   T=""
-  t=""
   m=0
   T+="from qiskit import QuantumCircuit, execute, Aer\n"
   T+="from qiskit.visualization import plot_histogram,display\n"
@@ -17,6 +17,7 @@ def compile(name: str):
   gatecount=0
   qdef=0
   p=Parser()
+  count=0
   for k in lines:
     for i in k:
       if  p.isDeny(i):
@@ -24,18 +25,16 @@ def compile(name: str):
           m=0
         else:
           m=2
-      if i==",":
-        pass
       elif s==1: #settings mode on
         if i!=" ":
           command+=i
         else:
           s=2
       elif s==2:
-        if i!=" " and i!="\n":
+        if i!="\t" and i!="\n":
           param+=i
         else:
-          T+=q.settings(command,param)
+          T+=settings(command,param)
           command=""
           param=""
           s=0
@@ -52,10 +51,10 @@ def compile(name: str):
           gate+=i
         elif i==" ":
           gatecount+=0.5
-          T+=q.quantum(gate,gatecount)
+          T+=quantum(gate,gatecount)
           gate=""
         else:
-          T+=q.quantum(gate,gatecount)
+          T+=quantum(gate,gatecount)
           gate=""
           gatecount=0
       elif i=="q":

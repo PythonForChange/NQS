@@ -1,4 +1,2 @@
-__author__="eanorambuena"
-__author_email__="eanorambuena@uc.cl"
-
-__username__: str
+_author="eanorambuena"
+_author_email="eanorambuena@uc.cl"
