@@ -1,6 +1,10 @@
-from qiskit import QuantumCircuit, execute, Aer
+fromfrom qiskit import QuantumCircuit, execute, Aer
 from qiskit.visualization import plot_histogram,display
-circuit=QuantumCircuit(1,1)
+from user.index import Indexcircuit=QuantumCircuit(1,1)
+try:
+	Index["import"]qiskit)
+except:
+	print("Error: import is not defined or is inaccessible")
 circuit.x(2)
 circuit.h(0)
 circuit.cx(0,1)
@@ -13,3 +17,4 @@ counts=result.get_counts(circuit)
 graph=plot_histogram(counts)
 display(graph)
 circuit.draw('mpl')
+

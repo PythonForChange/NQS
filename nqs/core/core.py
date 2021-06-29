@@ -9,6 +9,7 @@ def compile(name: str):
   m=0
   T+="from qiskit import QuantumCircuit, execute, Aer\n"
   T+="from qiskit.visualization import plot_histogram,display\n"
+  T+="from user.index import Index\n"
   s=0
   command=""
   param=""
@@ -17,7 +18,6 @@ def compile(name: str):
   gatecount=0
   qdef=0
   p=Parser()
-  count=0
   for k in lines:
     for i in k:
       if  p.isDeny(i):

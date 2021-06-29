@@ -1,17 +1,5 @@
 from nqs.core.functions import Func,clear
 from nqs.resources.console import sleep
-from user.config import index, definitions
-
-stdCommands=[
-  "host",
-  "shots",
-  "hist",
-  "draw",
-  "inject",
-  "function",
-  "clear",
-  "delay"
-]
 
 def settings(command: str,param):
   t=""
@@ -31,12 +19,15 @@ def settings(command: str,param):
     t=param+"\n"
   elif command=="function":
     p=Parameter(param)
-    f=Func(p.name,p.params,p.actions,index,definitions)
+    f=Func(p.name,p.params,p.actions,"user/index","user/definitions")
     f.add()
   elif command=="clear":
     clear(param)
   elif command=="delay":
     sleep(int(param))
+  else:
+    params=param.split(",")
+    t=executeFunction(command,params)
   return t
 
 class Parameter():
@@ -47,3 +38,15 @@ class Parameter():
     self.params=paramsBeforeSplit.split(",")
     actionsBeforeSplit=arr[2]
     self.actions=actionsBeforeSplit.split(",")
+
+def executeFunction(command,params):
+  t="try:\n"
+  t+="\tIndex[\""+command+"\"]("
+  last=params[-1]
+  params.pop()
+  for i in params:
+    t+="\""+i+"\""+","
+  t+="\""+last+"\""+")\n"
+  t+="except:\n"
+  t+="\tprint(\"Error: "+command+" is not defined or is inaccessible\")\n"
+  return t

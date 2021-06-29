@@ -1,4 +1,4 @@
-from nqs.developer.execute import run
+from nqs.developer.run import run
 from nqs.core.core import compile
 from nqs.resources.extensions import nqa
 from nqs.resources.console import display, get

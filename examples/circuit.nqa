@@ -9,8 +9,4 @@ c1
 $host qasm_simulator
 $hist true
 $draw true
-
-$function maicra|name,mob|print("I am "+name+" and my favourite mob is "+mob)
-$delay 1000
-$clear all
 ,

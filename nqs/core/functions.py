@@ -1,4 +1,3 @@
-import user.config as config
 from nqs.resources.extensions import py
 
 class Func():
@@ -35,7 +34,12 @@ class Func():
 
 def clear(param: str):
   if param=="all":
-    t1="from user.definitions import Definition\nIndex = { \n\'__init__\': Definition.__init__,  # Do not remove this function, Index must not be void\n}\n"
-    py.write(t1,config.index)
-    t2="class Definition():\n\tdef __init__(): # Do not remove this function, Definition must not be void\n\t\treturn \"done\""
-    py.write(t2,config.definitions)
+    t1="from user.definitions import Definition\n"
+    t1+="Index = { \n"
+    t1+="\'__init__\': Definition.__init__,  # Do not remove this function, Index must not be void\n"
+    t1+="}\n"
+    py.write(t1,"user/index")
+    t2="class Definition():\n"
+    t2+="\tdef __init__(): # Do not remove this function, Definition must not be void\n"
+    t2+="\t\treturn \"done\""
+    py.write(t2,"user/definitions")

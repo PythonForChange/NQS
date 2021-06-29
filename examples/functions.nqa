@@ -1,0 +1,5 @@
+$function maicra|name,mob|print("I am "+name+" and my favourite mob is "+mob)
+$maicra Vegetta,vaca
+$delay 1000
+$clear all
+,
