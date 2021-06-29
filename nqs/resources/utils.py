@@ -1,4 +1,4 @@
-import os, json, math
+import json, math
 
 def dump(structure, file):
   json.dump(structure, file, indent=2)
