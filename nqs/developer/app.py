@@ -36,7 +36,5 @@ def developerConsole(condition: bool = True):
         pass
       print(white+"Developer Console stopped running")
       return "done"
-    elif i[0]=="$":
-      print(white+"Error: NQS could not found the command \""+i+" \"")
     else:
     	nqa.append(i+"\n",name)

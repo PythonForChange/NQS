@@ -5,11 +5,8 @@ from nqs.resources.parser import Parser
 
 def compile(name: str):
   lines=nqa.getLines(name)
-  T=""
+  T="from user.index import Index\n"
   m=0
-  T+="from qiskit import QuantumCircuit, execute, Aer\n"
-  T+="from qiskit.visualization import plot_histogram,display\n"
-  T+="from user.index import Index\n"
   s=0
   command=""
   param=""
@@ -45,6 +42,8 @@ def compile(name: str):
           Q+=1
         elif i=="\n":
           qdef=2
+          T+="from qiskit import QuantumCircuit, execute, Aer\n"
+          T+="from qiskit.visualization import plot_histogram,display\n"
           T+="circuit=QuantumCircuit("+str(Q)+","+str(Q)+")\n"
       elif qdef==2:
         if i!="\n" and i!=" ":

@@ -8,7 +8,8 @@ class Func():
     self.indexfile=indexfile
     self.definitionsfile=definitionsfile
   def index(self):
-    lines=py.getLines(self.indexfile)
+    #lines=py.getLines(self.indexfile)
+    lines=py.read(self.indexfile).split("\n")
     lines.pop()
     newline="\'"+self.name+"\': Definition."+self.name+", "
     lines.append(newline)
