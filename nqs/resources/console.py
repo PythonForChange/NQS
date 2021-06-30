@@ -1,4 +1,5 @@
 import time, os
+from nqs.resources.constants import *
 
 def sleep(i: int =100):
   time.sleep(i/1000)
@@ -16,5 +17,5 @@ def display(T,delta: int =400,condition: bool = True):
     clearConsole()
 
 def get(tag: str):
-  i=input("$"+tag+"> ")
+  i=input(blue+"$"+tag+"> "+green)
   return i

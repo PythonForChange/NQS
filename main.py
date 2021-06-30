@@ -6,9 +6,9 @@ from nqs.resources.console import sleep
 from user.index import Index
 
 f="example2"
-write(f)
 
+developerConsole()
+#write(f)
 #developerDisplay(f)
-#developerConsole()
 #journalistConsole()
 

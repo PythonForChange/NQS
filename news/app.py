@@ -2,21 +2,22 @@
 from news.news import New
 from news.config import files,year
 from nqs.resources.console import get
+from nqs.resources.constants import *
 
 def journalistConsole(condition: bool = True):
-  print("Journalist Console is now running")
+  print(white+"Journalist Console is now running")
   while condition:
-    print("Title:")
+    print(white+"Title:")
     title=get("new")
-    print("Day:")
+    print(white+"Day:")
     day=int(get("new"))
-    print("Month:")
+    print(white+"Month:")
     month=int(get("new"))
     new=New(title,day,month,year,files)
-    print("Tags:")
+    print(white+"Tags:")
     tagsbycommas=get("new")
     new.tags=tagsbycommas.split(", ")
-    print("Content:")
+    print(white+"Content:")
     content=""
     while True:
       i=get("new")
@@ -25,13 +26,13 @@ def journalistConsole(condition: bool = True):
         new.add()
         break
       elif i[0]=="$":
-        print("Error: NQS could not found the command \""+i+" \"")
+        print(white+"Error: NQS could not found the command \""+i+" \"")
       else:
         content+=i+"\n"
-    print("Write $end to close the console")
-    print("Press enter key to write other new")
+    print(white+"Write $end to close the console")
+    print(white+"Press enter key to write other new")
     command=get("new")
     if command=="$end":
-      print("Journalist Console stopped running")
+      print(white+"Journalist Console stopped running")
       return "done"
 		
