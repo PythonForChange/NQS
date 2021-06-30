@@ -1,3 +1,4 @@
+from nqs import nqsCommands
 from nqs.core.functions import Func,clear
 from nqs.resources.console import sleep
 
@@ -19,6 +20,9 @@ def settings(command: str,param):
     t=param+"\n"
   elif command=="function":
     p=Parameter(param)
+    if p.name in nqsCommands:
+      print("Error: "+p.name+" is protected.")
+      return t
     f=Func(p.name,p.params,p.actions,"user/index","user/definitions")
     f.add()
   elif command=="clear":

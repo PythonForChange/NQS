@@ -1,7 +1,7 @@
 from nqs.developer.run import run
 from nqs.core.core import compile
 from nqs.resources.extensions import nqa
-from nqs.resources.console import display, get
+from nqs.resources.console import display, get, sleep
 
 def developerDisplay(name: str):
     content=nqa.read(name)
@@ -18,11 +18,16 @@ def developerConsole(condition: bool = True):
     elif i=="$compile":
       compile(name)
     elif i=="$save":
-      adress=input("Save as:")
+      print("Save as:")
+      adress=get("nqs")
       content=nqa.read(name)
       nqa.write(content,adress)
     elif i=="$run":
       run(name)
+    elif i=="$delay":
+      print("How many milliseconds?")
+      delta=get("nqs")
+      sleep(int(delta))
     elif i=="$end":
       try:
         nqa.delete(name)

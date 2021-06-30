@@ -17,5 +17,6 @@ consoleCommands=[
   "compile",
   "save",
   "run",
-  "$end"
+  "end",
+  "delay"
 ]

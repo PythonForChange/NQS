@@ -1,4 +1,4 @@
-fromfrom qiskit import QuantumCircuit, execute, Aer
+from qiskit import QuantumCircuit, execute, Aer
 from qiskit.visualization import plot_histogram,display
 from user.index import Indexcircuit=QuantumCircuit(1,1)
 try:
