@@ -1,4 +1,4 @@
-from nqs.resources.extensions import py
+from egg.resources.extensions import py
 
 class Func():
   def __init__(self,name: str,params,actions,indexfile: str,definitionsfile: str):

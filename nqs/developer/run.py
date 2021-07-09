@@ -1,5 +1,5 @@
 from nqs.developer.write import write
-from nqs.resources.extensions import py
+from egg.resources.extensions import py
 
 def run(name: str):
     write(name)

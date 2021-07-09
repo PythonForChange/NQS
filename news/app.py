@@ -1,8 +1,8 @@
 #Imports
 from news.news import New
 from news.config import files,year
-from nqs.resources.console import get
-from nqs.resources.constants import *
+from egg.resources.console import get
+from egg.resources.constants import *
 
 def journalistConsole(condition: bool = True):
   print(white+"Journalist Console is now running")

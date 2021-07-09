@@ -1,7 +1,7 @@
 from nqs.core.reader import settings
 from nqs.core.quantum import quantum
-from nqs.resources.extensions import nqa
-from nqs.resources.parser import Parser
+from egg.resources.extensions import nqa
+from egg.resources.parser import Parser
 
 def compile(name: str):
   lines=nqa.getLines(name)

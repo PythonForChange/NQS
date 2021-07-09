@@ -1,4 +1,4 @@
-import nqs.resources.utils as utils
+import egg.resources.utils as utils
 
 T="circuit."
 

@@ -1,7 +1,7 @@
 #Imports
-from nqs.resources.console import get
-from nqs.resources.extensions import py
-from nqs.resources.constants import *
+from egg.resources.console import get
+from egg.resources.extensions import py
+from egg.resources.constants import *
 from nqs.developer.app import developerConsole
 from news.app import journalistConsole
 

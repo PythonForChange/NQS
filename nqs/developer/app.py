@@ -1,8 +1,8 @@
 from nqs.developer.run import run
 from nqs.core.core import compile
-from nqs.resources.extensions import nqa
-from nqs.resources.console import display, get, sleep
-from nqs.resources.constants import *
+from egg.resources.extensions import nqa
+from egg.resources.console import display, get, sleep
+from egg.resources.constants import *
 
 def developerDisplay(name: str):
     content=nqa.read(name)

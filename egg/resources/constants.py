@@ -1,4 +1,4 @@
-from nqs.resources.utils import colour
+from egg.resources.utils import colour
 
 BLACK=30
 RED=31

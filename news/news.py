@@ -1,4 +1,4 @@
-from nqs.resources.console import sleep
+from egg.resources.console import sleep
 
 class New():
   def __init__(self,title: str, day: int, month: int ,year: int = 2021, files = ["README.md"]):
