@@ -1,6 +1,5 @@
 ~.nqa file code~
 
-$import qiskit
 q0  q1
     X
 H
