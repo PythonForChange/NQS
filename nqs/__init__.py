@@ -1,3 +1,6 @@
+from nqs.developer.write import write
+from nqs.developer.run import run
+
 _author="eanorambuena"
 _author_email="eanorambuena@uc.cl"
 

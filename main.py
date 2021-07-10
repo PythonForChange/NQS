@@ -1,10 +1,12 @@
-from nqs.developer.write import write
-from nqs.developer.run import run
-from egg.resources.extensions import py
-from egg.resources.console import sleep
-from egg.app import eggConsole
+from nqs import write, run
+from egg import py, sleep, eggConsole, install
 
 f="example2"
-eggConsole()
+#eggConsole()
 #run(f)
 #write(f)
+
+from github_com.PythonForChange import covidplot
+install("matplotlib")
+c=covidplot.CovidData()
+c.plot("casos")
