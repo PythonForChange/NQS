@@ -1,4 +1,4 @@
-import egg.resources.utils as utils
+import eggdriver.resources.utils as utils
 
 T="circuit."
 

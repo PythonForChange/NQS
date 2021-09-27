@@ -1,6 +1,6 @@
-import nqs.core.core as core
-from egg.resources.extensions import py
+from nqs.core.kernel import compile
+from eggdriver.resources.extensions import py
 
 def write(name: str):
-	T=core.compile(name)
-	py.write(T,name)
+	T = compile(name)
+	py.write(T, name)

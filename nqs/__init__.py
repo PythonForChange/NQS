@@ -1,10 +1,10 @@
-from nqs.developer.write import write
-from nqs.developer.run import run
+from nqs.core import *
+from nqs.developer import *
 
-_author="eanorambuena"
-_author_email="eanorambuena@uc.cl"
+author = "eanorambuena"
+author_email = "eanorambuena@uc.cl"
 
-nqsCommands=[
+nqsCommands = [
   "host",
   "shots",
   "hist",
@@ -15,7 +15,7 @@ nqsCommands=[
   "delay"
 ]
 
-consoleCommands=[
+consoleCommands = [
   "display",
   "compile",
   "save",
