@@ -17,6 +17,8 @@ c1<br>
 NQS is initially based on Qiskit, but seeks to go mainstream in the future.
 This is an OS project whose initial goal was to make it easier to write basic scripts in Qiskit and to bridge the gap for people who don't dare to delve into quantum computing.
 
+Try it using [Nateve Programming Language](https://github.com/NateveLanguage)!
+
 <a href='https://nqs.readthedocs.io/en/latest/?badge=latest'>
     <img src='https://readthedocs.org/projects/nqs/badge/?version=latest' alt='Documentation Status' />
 </a>
