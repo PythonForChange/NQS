@@ -4,7 +4,7 @@
 
 # NQS
 
-Natural Quantum Script is a special domain programming language that aims to simplify the first contact with quantum computing for people who have prior knowledge in quantum circuits, but not in quantum software development.
+Natural Quantum Script is a special domain scripting language that aims to simplify the first contact with quantum computing for people who have prior knowledge in quantum circuits, but not in quantum software development.
 
 Scripts written in NQS seek to visually resemble quantum circuits as much as possible. For example:
 
