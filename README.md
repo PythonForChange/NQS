@@ -24,11 +24,11 @@ Try it using [Nateve Programming Language](https://github.com/NateveLanguage)!
 </a>
 
 ## News
-### PythonForChange Announce New SDL: Natural Quantum Script 
+### PythonForChange Announces New SDL: Natural Quantum Script 
 #### 06/23/2021 Santiago, Chile
 ##### Tags: [quantum-programming-language](https://github.com/topics/quantum-programming-language)
 
-NQS (Natural Quantum Script) is a speciall domain programming language. It is focused on quantum devices scripting.
+NQS (Natural Quantum Script) is a speciall domain scriping language. It is focused on quantum devices scripting.
 The launching date will be announced soon.
 
 File extension: .nqa (Natural Quantum Application)<br><br>
@@ -38,3 +38,9 @@ File extension: .nqa (Natural Quantum Application)<br><br>
 ##### Tags: [quantum-programming-language](https://github.com/topics/quantum-programming-language)
 
 More information about pre-releases [here](https://github.com/eanorambuena/NQS)
+
+### PythonForChange Announces NQS inclussion into Nateve Programming Language
+#### 11/15/2021 Santiago, Chile
+##### Tags: [quantum-programming-language](https://github.com/topics/quantum-programming-language), [nateve](https://github.com/topics/nateve), [nateve-language](https://github.com/topics/nateve-language)
+
+Try it using [Nateve Programming Language](https://github.com/NateveLanguage)!
